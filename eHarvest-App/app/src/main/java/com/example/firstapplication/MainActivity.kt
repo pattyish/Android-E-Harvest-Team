@@ -8,6 +8,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.firstapplication.ui.compose.AddingProduct
 import com.example.firstapplication.ui.compose.FirstScreen
 import com.example.firstapplication.ui.compose.LoginScreen
 import com.example.firstapplication.ui.compose.RegisterScreen
@@ -45,6 +46,10 @@ fun IntentView(){
         composable(
             "RegisterScreen", content = { RegisterScreen(navController = navController) }
         )
+         composable(
+             "AddingProduct", content = { AddingProduct(navController = navController) }
+         )
+
      }
     )
 }

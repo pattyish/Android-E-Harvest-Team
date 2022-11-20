@@ -29,33 +29,34 @@ import com.example.firstapplication.R
 import com.example.firstapplication.ui.theme.*
 
 @Composable
-fun LoginScreen(navController: NavController){
-    Column() {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter){
-            Image(
-                painter = painterResource(id = R.drawable.bg),
-                contentDescription = null,
-                contentScale = ContentScale.Crop
-            )
-
-            Column(modifier = Modifier
-                .padding(top = 10.dp)
-                .fillMaxSize(),
-                verticalArrangement = Arrangement.Top,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ){
-                Image(painter = painterResource(id = R.drawable.rectangleligth),
-                    contentDescription = null,
-                    modifier = Modifier.padding(top = 150.dp)
-                )
+fun AddingProduct(navController: NavController){
+    Column(){
+        TopAppBar(
+            title = { Text("Simple TopAppBar") },
+            navigationIcon = {
+                IconButton(onClick = { /* doSomething() */ }) {
+                    Icon(Icons.Filled.Menu, contentDescription = null)
+                }
+            },
+            actions = {
+                // RowScope here, so these icons will be placed horizontally
+                IconButton(onClick = { /* doSomething() */ }) {
+                    Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                }
+                IconButton(onClick = { /* doSomething() */ }) {
+                    Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                }
             }
-
-            Column(modifier = Modifier
-                .background(Color.White)
-                .fillMaxWidth()
-                .height(640.dp),
-            ){
-                Text(text = "Login",
+        )
+        Box() {
+            Column(
+                modifier = Modifier
+                    .background(Color.White)
+                    .fillMaxWidth()
+                    .height(640.dp),
+            ) {
+                Text(
+                    text = "Add Product",
                     fontFamily = aksfonts,
                     style = TextStyle(fontSize = 45.sp),
                     fontWeight = FontWeight.Bold,
@@ -63,33 +64,42 @@ fun LoginScreen(navController: NavController){
                         .padding(start = 30.dp, top = 40.dp)
                 )
                 Spacer(modifier = Modifier.padding(top = 7.dp))
-                Text(text = "Welcome Back!",
-                    fontFamily = karla,
-                    style = TextStyle(fontSize = 20.sp),
-                    modifier = Modifier
-                        .padding(start = 30.dp),
-                    color = TextGray
-                )
-                Text(text = "Sign In in your account",
-                    fontFamily = karla,
-                    style = TextStyle(fontSize = 20.sp),
-                    modifier = Modifier
-                        .padding(start = 30.dp)
-                        .clickable { navController.navigate("AddingProduct") },
-                    color = TextGray
-                )
-                Spacer(modifier = Modifier.padding(top = 45.dp))
-                Text(text = "EMAIL",
+                Text(
+                    text = "Product Name",
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
                         .padding(start = 30.dp),
                     color = TextGray
                 )
-
-                var email by remember { mutableStateOf(TextFieldValue("")) }
-                OutlinedTextField(value = email,
-                    onValueChange = { newText -> email = newText},
+                var name by remember { mutableStateOf(TextFieldValue("")) }
+                OutlinedTextField(
+                    value = name,
+                    onValueChange = { newText -> name = newText },
+                    modifier = Modifier
+                        .padding(start = 30.dp, end = 30.dp)
+                        .fillMaxWidth()
+                        .background(AkshatWhite),
+                    colors = TextFieldDefaults.outlinedTextFieldColors(
+                        focusedBorderColor = Color.Black
+                    ),
+                    shape = RoundedCornerShape(0.5.dp),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
+                    maxLines = 1
+                )
+                Spacer(modifier = Modifier.padding(top = 20.dp))
+                Text(
+                    text = "Product description",
+                    fontFamily = karla,
+                    style = TextStyle(fontSize = 18.sp),
+                    modifier = Modifier
+                        .padding(start = 30.dp),
+                    color = TextGray
+                )
+                var description by remember { mutableStateOf(TextFieldValue("")) }
+                OutlinedTextField(
+                    value = description,
+                    onValueChange = { newText -> description = newText },
                     modifier = Modifier
                         .padding(start = 30.dp, end = 30.dp)
                         .fillMaxWidth()
@@ -101,19 +111,18 @@ fun LoginScreen(navController: NavController){
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
                     maxLines = 1
                 )
-                Spacer(modifier = Modifier.padding(top = 28.dp))
-
-                Text(text = "PASSWORD",
+                Spacer(modifier = Modifier.padding(top = 20.dp))
+                Text(
+                    text = "Quantity",
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
                         .padding(start = 30.dp),
                     color = TextGray
                 )
-
-                var password by remember { mutableStateOf(TextFieldValue("")) }
-                OutlinedTextField(value = password,
-                    onValueChange = { newText -> password = newText},
+                var quantity by remember { mutableStateOf(TextFieldValue("")) }
+                OutlinedTextField(value = quantity,
+                    onValueChange = { newText -> quantity = newText },
                     modifier = Modifier
                         .padding(start = 30.dp, end = 30.dp)
                         .fillMaxWidth()
@@ -124,55 +133,65 @@ fun LoginScreen(navController: NavController){
                     shape = RoundedCornerShape(0.5.dp),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
                     maxLines = 1,
-                    trailingIcon = { Icon(imageVector = Icons.Default.Settings, contentDescription = null) }
+                    trailingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.Settings,
+                            contentDescription = null
+                        )
+                    }
                 )
-                Spacer(modifier = Modifier.padding(top = 18.dp))
-
-                Text(text = "Forgot Password?",
-                    fontFamily = karla,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(start = 30.dp),
-                    style = TextStyle(fontSize = 18.sp)
-                )
-                Spacer(modifier = Modifier.padding(top = 95.dp))
+                Spacer(modifier = Modifier.padding(top = 20.dp))
                 Text(
-                    text = "I don't have an account",
+                    text = "Price",
                     fontFamily = karla,
-                    fontWeight = FontWeight.Bold,
                     style = TextStyle(fontSize = 18.sp),
-                    color = Color.Black,
-                    textAlign = TextAlign.Center,
                     modifier = Modifier
-                        .padding(start = 100.dp)
-                        .clickable { navController.navigate("RegisterScreen") }
+                        .padding(start = 30.dp),
+                    color = TextGray
                 )
-                Spacer(modifier = Modifier.padding(top = 10.dp))
+                var price by remember { mutableStateOf(TextFieldValue("")) }
+                OutlinedTextField(value = price,
+                    onValueChange = { newText -> price = newText },
+                    modifier = Modifier
+                        .padding(start = 30.dp, end = 30.dp)
+                        .fillMaxWidth()
+                        .background(AkshatWhite),
+                    colors = TextFieldDefaults.outlinedTextFieldColors(
+                        focusedBorderColor = Color.Black
+                    ),
+                    shape = RoundedCornerShape(0.5.dp),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                    maxLines = 1,
+                    trailingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.Settings,
+                            contentDescription = null
+                        )
+                    }
+                )
 
-                Button(onClick = { navController.navigate("DashboardScreen") },
+                Spacer(modifier = Modifier.padding(top = 10.dp))
+                Button(
+                    onClick = { /*TODO*/ },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(70.dp),
                     colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen)
                 ) {
-                    Text(text = "Login",
+                    Text(
+                        text = "Add Product",
                         color = Color.White,
                         style = TextStyle(fontSize = 23.sp),
                         modifier = Modifier
                             .background(color = AksGreen)
-                            .padding(top = .1.dp),
+                            .padding(top = 1.dp),
                         fontFamily = karla,
                         textAlign = TextAlign.Center,
                         fontWeight = FontWeight.Bold
                     )
                 }
+
             }
         }
-
     }
 }
-
-//@Preview(showBackground = true, showSystemUi = true)
-//@Composable
-//fun LoginScreenPreview() {
-//    LoginScreen(navController = NavController())
-//}
