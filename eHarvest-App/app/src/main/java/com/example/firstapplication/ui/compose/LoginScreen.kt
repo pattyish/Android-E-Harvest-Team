@@ -8,6 +8,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -72,7 +74,8 @@ fun LoginScreen(navController: NavController){
                     fontFamily = karla,
                     style = TextStyle(fontSize = 20.sp),
                     modifier = Modifier
-                        .padding(start = 30.dp),
+                        .padding(start = 30.dp)
+                        .clickable { navController.navigate("AddingProduct") },
                     color = TextGray
                 )
                 Spacer(modifier = Modifier.padding(top = 45.dp))
