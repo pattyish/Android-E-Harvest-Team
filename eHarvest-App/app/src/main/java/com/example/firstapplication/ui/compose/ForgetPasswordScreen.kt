@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -52,7 +53,7 @@ fun ForgetPasswordScreen(navController: NavController){
                 .fillMaxWidth()
                 .height(640.dp),
             ){
-                Text(text = "Password Reset",
+                Text(text = stringResource(id = R.string.reset_password),
                     fontFamily = aksfonts,
                     style = TextStyle(fontSize = 45.sp),
                     fontWeight = FontWeight.Bold,
@@ -107,7 +108,7 @@ fun ForgetPasswordScreen(navController: NavController){
                         .height(70.dp),
                     colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen)
                 ) {
-                    Text(text = "Reset Password",
+                    Text(text = stringResource(id = R.string.reset_password),
                         color = Color.White,
                         style = TextStyle(fontSize = 23.sp),
                         modifier = Modifier
