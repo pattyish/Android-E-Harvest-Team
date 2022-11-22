@@ -26,6 +26,7 @@ import com.example.firstapplication.R
 import com.example.firstapplication.ui.theme.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material.icons.filled.*
+import androidx.compose.ui.res.stringResource
 
 
 @Composable
@@ -34,7 +35,7 @@ fun AddingProduct(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         TopAppBar(
-            title = { Text("E-Harvest") },
+            title = { Text(stringResource(id = R.string.app_title)) },
             navigationIcon = {
                 IconButton(onClick = { /* doSomething() */ }) {
                     Icon(Icons.Filled.Menu, contentDescription = null)
@@ -63,7 +64,7 @@ fun AddingProduct(navController: NavController){
                     .height(640.dp),
             ) {
                 Text(
-                    text = "Add Product",
+                    text = stringResource(id = R.string.add_product_title),
                     fontFamily = aksfonts,
                     style = TextStyle(fontSize = 30.sp),
                     fontWeight = FontWeight.Bold,
@@ -72,7 +73,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = "Product Name",
+                    text = stringResource(id = R.string.product_name),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -96,7 +97,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = "Small Description",
+                    text = stringResource(id = R.string.product_sm_desc),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -120,7 +121,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = "Small Description",
+                    text = stringResource(id = R.string.product_long_desc),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -144,7 +145,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = "Quantity",
+                    text = stringResource(id = R.string.quantity),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -167,7 +168,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = "Price",
+                    text = stringResource(id = R.string.price),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -198,7 +199,7 @@ fun AddingProduct(navController: NavController){
                     colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen),
                 ) {
                     Text(
-                        text = "Add Product",
+                        text = stringResource(id = R.string.add_prod_button),
                         color = Color.White,
                         style = TextStyle(fontSize = 23.sp),
                         modifier = Modifier
