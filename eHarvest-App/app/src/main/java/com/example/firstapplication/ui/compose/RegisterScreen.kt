@@ -142,7 +142,7 @@ fun RegisterScreen (navController: NavController){
                 maxLines = 1,
                 trailingIcon = { Icon(imageVector = Icons.Default.Settings, contentDescription = null) }
             )
-            Spacer(modifier = Modifier.padding(top = 60.dp))
+            Spacer(modifier = Modifier.padding(top = 20.dp))
             Text(text = "I have an account",
                 fontFamily = karla,
                 fontWeight = FontWeight.Bold,
@@ -152,7 +152,8 @@ fun RegisterScreen (navController: NavController){
                 style = TextStyle(fontSize = 18.sp)
             )
             Spacer(modifier = Modifier.padding(top = 10.dp))
-            Button(onClick = { /*TODO*/ },
+            Button(onClick = { navController.navigate("LoginScreen") },
+
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(70.dp),
