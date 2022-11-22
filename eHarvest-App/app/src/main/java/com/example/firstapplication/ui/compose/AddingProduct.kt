@@ -8,9 +8,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -27,12 +24,17 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.firstapplication.R
 import com.example.firstapplication.ui.theme.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material.icons.filled.*
+
 
 @Composable
 fun AddingProduct(navController: NavController){
-    Column(){
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
         TopAppBar(
-            title = { Text("Simple TopAppBar") },
+            title = { Text("E-Harvest") },
             navigationIcon = {
                 IconButton(onClick = { /* doSomething() */ }) {
                     Icon(Icons.Filled.Menu, contentDescription = null)
@@ -44,9 +46,14 @@ fun AddingProduct(navController: NavController){
                     Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
                 }
                 IconButton(onClick = { /* doSomething() */ }) {
-                    Icon(Icons.Filled.Favorite, contentDescription = "Localized description")
+                    Icon(Icons.Filled.ShoppingCart, contentDescription = "Localized description")
                 }
-            }
+                IconButton(onClick = { /* doSomething() */ }) {
+                    Icon(Icons.Filled.MoreVert, contentDescription = "Localized description")
+                }
+            },
+            backgroundColor = AksGreen,
+            contentColor = Color.White,
         )
         Box() {
             Column(
@@ -58,12 +65,12 @@ fun AddingProduct(navController: NavController){
                 Text(
                     text = "Add Product",
                     fontFamily = aksfonts,
-                    style = TextStyle(fontSize = 45.sp),
+                    style = TextStyle(fontSize = 30.sp),
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
                         .padding(start = 30.dp, top = 40.dp)
                 )
-                Spacer(modifier = Modifier.padding(top = 7.dp))
+                Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
                     text = "Product Name",
                     fontFamily = karla,
@@ -87,19 +94,19 @@ fun AddingProduct(navController: NavController){
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
                     maxLines = 1
                 )
-                Spacer(modifier = Modifier.padding(top = 20.dp))
+                Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = "Product description",
+                    text = "Small Description",
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
                         .padding(start = 30.dp),
                     color = TextGray
                 )
-                var description by remember { mutableStateOf(TextFieldValue("")) }
+                var smallDescription by remember { mutableStateOf(TextFieldValue("")) }
                 OutlinedTextField(
-                    value = description,
-                    onValueChange = { newText -> description = newText },
+                    value = smallDescription,
+                    onValueChange = { newText -> smallDescription = newText },
                     modifier = Modifier
                         .padding(start = 30.dp, end = 30.dp)
                         .fillMaxWidth()
@@ -111,7 +118,31 @@ fun AddingProduct(navController: NavController){
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
                     maxLines = 1
                 )
-                Spacer(modifier = Modifier.padding(top = 20.dp))
+                Spacer(modifier = Modifier.padding(top = 10.dp))
+                Text(
+                    text = "Small Description",
+                    fontFamily = karla,
+                    style = TextStyle(fontSize = 18.sp),
+                    modifier = Modifier
+                        .padding(start = 30.dp),
+                    color = TextGray
+                )
+                var longDescription by remember { mutableStateOf(TextFieldValue("")) }
+                OutlinedTextField(
+                    value = longDescription,
+                    onValueChange = { newText -> longDescription = newText },
+                    modifier = Modifier
+                        .padding(start = 30.dp, end = 30.dp)
+                        .fillMaxWidth()
+                        .background(AkshatWhite),
+                    colors = TextFieldDefaults.outlinedTextFieldColors(
+                        focusedBorderColor = Color.Black
+                    ),
+                    shape = RoundedCornerShape(0.5.dp),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
+                    maxLines = 1
+                )
+                Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
                     text = "Quantity",
                     fontFamily = karla,
@@ -132,15 +163,9 @@ fun AddingProduct(navController: NavController){
                     ),
                     shape = RoundedCornerShape(0.5.dp),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                    maxLines = 1,
-                    trailingIcon = {
-                        Icon(
-                            imageVector = Icons.Default.Settings,
-                            contentDescription = null
-                        )
-                    }
+                    maxLines = 1
                 )
-                Spacer(modifier = Modifier.padding(top = 20.dp))
+                Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
                     text = "Price",
                     fontFamily = karla,
@@ -161,22 +186,16 @@ fun AddingProduct(navController: NavController){
                     ),
                     shape = RoundedCornerShape(0.5.dp),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                    maxLines = 1,
-                    trailingIcon = {
-                        Icon(
-                            imageVector = Icons.Default.Settings,
-                            contentDescription = null
-                        )
-                    }
+                    maxLines = 1
                 )
 
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Button(
                     onClick = { /*TODO*/ },
                     modifier = Modifier
-                        .fillMaxWidth()
+                        .padding(start = 30.dp, end = 30.dp)
                         .height(70.dp),
-                    colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen)
+                    colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen),
                 ) {
                     Text(
                         text = "Add Product",
@@ -184,7 +203,7 @@ fun AddingProduct(navController: NavController){
                         style = TextStyle(fontSize = 23.sp),
                         modifier = Modifier
                             .background(color = AksGreen)
-                            .padding(top = 1.dp),
+                            .padding(10.dp),
                         fontFamily = karla,
                         textAlign = TextAlign.Center,
                         fontWeight = FontWeight.Bold
