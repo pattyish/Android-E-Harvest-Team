@@ -1,5 +1,7 @@
 package com.example.firstapplication
 
+import ForgetPasswordScreen
+import ResetPasswordScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -9,6 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.firstapplication.ui.compose.FirstScreen
+import com.example.firstapplication.ui.compose.HomeScreen
 import com.example.firstapplication.ui.compose.LoginScreen
 import com.example.firstapplication.ui.compose.RegisterScreen
 import com.example.firstapplication.ui.theme.*
@@ -36,6 +39,15 @@ fun IntentView(){
         navController = navController,
         startDestination = "FirstScreen", builder =
      {
+         composable(
+             "ResetPasswordScreen", content = { ResetPasswordScreen(navController = navController) }
+         )
+         composable(
+             "ForgetPasswordScreen", content = { ForgetPasswordScreen(navController = navController) }
+         )
+         composable(
+             "HomeScreen", content = { HomeScreen(navController = navController) }
+         )
         composable(
             "FirstScreen", content = { FirstScreen(navController = navController) }
         )
