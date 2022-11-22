@@ -122,6 +122,7 @@ fun AddingProduct(navController: NavController){
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
                     text = stringResource(id = R.string.prod_long_descr),
+                    text = stringResource(id = R.string.product_long_desc),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -200,6 +201,7 @@ fun AddingProduct(navController: NavController){
                 ) {
                     Text(
                         text = stringResource(id = R.string.add_product_button),
+                        text = stringResource(id = R.string.add_prod_button),
                         color = Color.White,
                         style = TextStyle(fontSize = 23.sp),
                         modifier = Modifier
