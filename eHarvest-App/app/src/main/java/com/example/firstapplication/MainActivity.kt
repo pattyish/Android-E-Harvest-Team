@@ -38,7 +38,7 @@ fun IntentView(){
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = "FirstScreen", builder =
+        startDestination = "HomeScreen", builder =
      {
          composable(
              "ResetPasswordScreen", content = { ResetPasswordScreen(navController = navController) }

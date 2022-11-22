@@ -74,8 +74,7 @@ fun LoginScreen(navController: NavController){
                     fontFamily = karla,
                     style = TextStyle(fontSize = 20.sp),
                     modifier = Modifier
-                        .padding(start = 30.dp)
-                        .clickable { navController.navigate("AddingProduct") },
+                        .padding(start = 30.dp),
                     color = TextGray
                 )
                 Spacer(modifier = Modifier.padding(top = 45.dp))
@@ -153,7 +152,7 @@ fun LoginScreen(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
 
-                Button(onClick = { navController.navigate("HomeScreen") },
+                Button(onClick = { navController.navigate("AddingProduct") },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(70.dp),
