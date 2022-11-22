@@ -8,4 +8,6 @@
     <string name="app_title">E-Harvest</string>
     <string name="add_prod_button">Add Product</string>
     <string name="add_product_title">Add Product</string>
+    <string name="update_product_title">Update Product</string>
+    <string name="update_prod_buttom">Update Product</string>
 </resources>
