@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">eHarvest</string>
+    <string name="product_name">Product name</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="prod_sm_desc">Small description</string>
+    <string name="prod_long_descr">Long Description</string>
+    <string name="add_product_button">Add Product</string>
+    <string name="add_product_title">Add Product</string>
+    <string name="title">E-Harvest</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="forgetPass">Forgot Password</string>
+    <string name="reset_password">Rest Password</string>
+    <string name="no_account">Add Product</string>
 </resources>
