@@ -101,7 +101,7 @@ fun ForgetPasswordScreen(navController: NavController){
 
                 Spacer(modifier = Modifier.padding(top = 10.dp))
 
-                Button(onClick = { navController.navigate("LoginScreen") },
+                Button(onClick = { navController.navigate("ResetPasswordScreen") },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(70.dp),
