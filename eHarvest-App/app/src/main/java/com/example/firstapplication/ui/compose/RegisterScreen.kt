@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -142,7 +143,7 @@ fun RegisterScreen (navController: NavController){
                 maxLines = 1,
                 trailingIcon = { Icon(imageVector = Icons.Default.Settings, contentDescription = null) }
             )
-            Spacer(modifier = Modifier.padding(top = 60.dp))
+            Spacer(modifier = Modifier.padding(top = 20.dp))
             Text(text = "I have an account",
                 fontFamily = karla,
                 fontWeight = FontWeight.Bold,
@@ -152,13 +153,14 @@ fun RegisterScreen (navController: NavController){
                 style = TextStyle(fontSize = 18.sp)
             )
             Spacer(modifier = Modifier.padding(top = 10.dp))
-            Button(onClick = { /*TODO*/ },
+            Button(onClick = { navController.navigate("LoginScreen") },
+
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(70.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen)
             ) {
-                Text(text = "Register",
+                Text(text = stringResource(id = R.string.register_button),
                     color = Color.White,
                     style = TextStyle(fontSize = 23.sp),
                     modifier = Modifier

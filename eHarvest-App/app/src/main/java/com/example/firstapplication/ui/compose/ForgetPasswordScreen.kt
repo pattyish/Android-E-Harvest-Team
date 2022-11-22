@@ -1,4 +1,3 @@
-package com.example.firstapplication.ui.compose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -8,8 +7,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -30,7 +27,7 @@ import com.example.firstapplication.R
 import com.example.firstapplication.ui.theme.*
 
 @Composable
-fun LoginScreen(navController: NavController){
+fun ForgetPasswordScreen(navController: NavController){
     Column() {
         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter){
             Image(
@@ -56,7 +53,7 @@ fun LoginScreen(navController: NavController){
                 .fillMaxWidth()
                 .height(640.dp),
             ){
-                Text(text = "Login",
+                Text(text = stringResource(id = R.string.reset_password),
                     fontFamily = aksfonts,
                     style = TextStyle(fontSize = 45.sp),
                     fontWeight = FontWeight.Bold,
@@ -64,14 +61,14 @@ fun LoginScreen(navController: NavController){
                         .padding(start = 30.dp, top = 40.dp)
                 )
                 Spacer(modifier = Modifier.padding(top = 7.dp))
-                Text(text = "Welcome Back!",
-                    fontFamily = karla,
-                    style = TextStyle(fontSize = 20.sp),
-                    modifier = Modifier
-                        .padding(start = 30.dp),
-                    color = TextGray
-                )
-                Text(text = "Sign In in your account",
+//                Text(text = "Welcome Back!",
+//                    fontFamily = karla,
+//                    style = TextStyle(fontSize = 20.sp),
+//                    modifier = Modifier
+//                        .padding(start = 30.dp),
+//                    color = TextGray
+//                )
+                Text(text = "Use your email to reset Password",
                     fontFamily = karla,
                     style = TextStyle(fontSize = 20.sp),
                     modifier = Modifier
@@ -101,65 +98,17 @@ fun LoginScreen(navController: NavController){
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
                     maxLines = 1
                 )
-                Spacer(modifier = Modifier.padding(top = 28.dp))
 
-                Text(text = "PASSWORD",
-                    fontFamily = karla,
-                    style = TextStyle(fontSize = 18.sp),
-                    modifier = Modifier
-                        .padding(start = 30.dp),
-                    color = TextGray
-                )
 
-                var password by remember { mutableStateOf(TextFieldValue("")) }
-                OutlinedTextField(value = password,
-                    onValueChange = { newText -> password = newText},
-                    modifier = Modifier
-                        .padding(start = 30.dp, end = 30.dp)
-                        .fillMaxWidth()
-                        .background(AkshatWhite),
-                    colors = TextFieldDefaults.outlinedTextFieldColors(
-                        focusedBorderColor = Color.Black
-                    ),
-                    shape = RoundedCornerShape(0.5.dp),
-                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                    maxLines = 1,
-                    trailingIcon = { Icon(imageVector = Icons.Default.Settings, contentDescription = null) }
-                )
-                Spacer(modifier = Modifier.padding(top = 18.dp))
-
-                Text(
-                    text = stringResource(id = R.string.forgetPass) + " ?",
-                    fontFamily = karla,
-                    fontWeight = FontWeight.Bold,
-                    style = TextStyle(fontSize = 18.sp),
-                    color = Color.Black,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier
-                        .padding(start = 100.dp)
-                        .clickable { navController.navigate("ForgetPasswordScreen") }
-                )
-                Spacer(modifier = Modifier.padding(top = 95.dp))
-                Text(
-                    text = "I don't have an account",
-                    fontFamily = karla,
-                    fontWeight = FontWeight.Bold,
-                    style = TextStyle(fontSize = 18.sp),
-                    color = Color.Black,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier
-                        .padding(start = 100.dp)
-                        .clickable { navController.navigate("RegisterScreen") }
-                )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
 
-                Button(onClick = { navController.navigate("AddingProduct") },
+                Button(onClick = { navController.navigate("ResetPasswordScreen") },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(70.dp),
                     colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen)
                 ) {
-                    Text(text = stringResource(id = R.string.login_button),
+                    Text(text = stringResource(id = R.string.reset_password),
                         color = Color.White,
                         style = TextStyle(fontSize = 23.sp),
                         modifier = Modifier
@@ -170,6 +119,19 @@ fun LoginScreen(navController: NavController){
                         fontWeight = FontWeight.Bold
                     )
                 }
+
+                Spacer(modifier = Modifier.padding(top = 18.dp))
+                Text(
+                    text = "Back to login",
+                    fontFamily = karla,
+                    fontWeight = FontWeight.Bold,
+                    style = TextStyle(fontSize = 18.sp),
+                    color = Color.Black,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier
+                        .padding(start = 100.dp)
+                        .clickable { navController.navigate("LoginScreen") }
+                )
             }
         }
 
