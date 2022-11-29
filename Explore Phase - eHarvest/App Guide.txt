@@ -1,0 +1,16 @@
+   	---- E-HARVEST GUIDE ---- 
+
+	Currently, we've managed to link the following UI Activity interface.
+
+	> Initial launch of the app takes as to the home screen with items.
+
+	> To access the login screen the user has to click "Account" button at
+  	  The buttom.
+
+	> After reaching the login screen, the user can navigate through other
+  	  Different screens such as (Account Register, Forget Password Screen
+  	  , Reset Password Screen (Accessed by clicking reset button)
+  	  , Add product screen (accessed by clicking login button)).
+
+
+		Thanks for testing E-HARVEST APP.
