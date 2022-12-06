@@ -35,7 +35,7 @@ fun AddingProduct(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         TopAppBar(
-            title = { Text(stringResource(id = R.string.app_title)) },
+            title = { Text(stringResource(id = R.string.title)) },
             navigationIcon = {
                 IconButton(onClick = { /* doSomething() */ }) {
                     Icon(Icons.Filled.Menu, contentDescription = null)
@@ -97,7 +97,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
-                    text = stringResource(id = R.string.product_sm_desc),
+                    text = stringResource(id = R.string.prod_sm_desc),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
                     modifier = Modifier
@@ -121,6 +121,7 @@ fun AddingProduct(navController: NavController){
                 )
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Text(
+                    text = stringResource(id = R.string.prod_long_descr),
                     text = stringResource(id = R.string.product_long_desc),
                     fontFamily = karla,
                     style = TextStyle(fontSize = 18.sp),
@@ -199,6 +200,7 @@ fun AddingProduct(navController: NavController){
                     colors = ButtonDefaults.buttonColors(backgroundColor = AksGreen),
                 ) {
                     Text(
+                        text = stringResource(id = R.string.add_product_button),
                         text = stringResource(id = R.string.add_prod_button),
                         color = Color.White,
                         style = TextStyle(fontSize = 23.sp),
