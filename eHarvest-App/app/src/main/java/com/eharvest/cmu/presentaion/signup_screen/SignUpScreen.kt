@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -90,7 +91,7 @@ fun SignUpScreen(
             ) {
                 Text(
                     modifier = Modifier.padding(bottom = 15.dp),
-                    text = "Register",
+                    text = stringResource(id = R.string.register),
                     fontWeight = FontWeight.Bold,
                     fontSize = 35.sp,
                     fontFamily = RegularFont,
@@ -146,7 +147,7 @@ fun SignUpScreen(
                     modifier = Modifier
                         .align(Alignment.Start)
                         .padding(end = 20.dp, top = 10.dp),
-                    text = "Forgot Password?",
+                    text = stringResource(id = R.string.forgot_password),
                     fontWeight = FontWeight.SemiBold, color = Color.Black, fontFamily = RegularFont,
 
                     )
@@ -191,7 +192,7 @@ fun SignUpScreen(
                     shape = RoundedCornerShape(15.dp)
                 ) {
                     Text(
-                        text = "Sign Up",
+                        text = stringResource(id = R.string.sign_up_button),
                         color = Color.White,
                         modifier = Modifier
                             .padding(7.dp)
