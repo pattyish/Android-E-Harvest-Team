@@ -1,16 +1,20 @@
 package com.eharvest.cmu.presentaion.home_screen
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.rememberScaffoldState
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -61,34 +65,10 @@ fun HomeScreen(
                     icon = Icons.Default.Home
                 ),
                 MenuItem(
-                    direction = "Home",
-                    title = "Home",
-                    contentDescription = "Go to home",
-                    icon = Icons.Default.Home
-                ),
-                MenuItem(
-                    direction = "Home",
-                    title = "Home",
-                    contentDescription = "Go to home",
-                    icon = Icons.Default.Home
-                ),
-                MenuItem(
-                    direction = "Home",
-                    title = "Home",
-                    contentDescription = "Go to home",
-                    icon = Icons.Default.Home
-                ),
-                MenuItem(
-                    direction = "Home",
-                    title = "Home",
-                    contentDescription = "Go to home",
-                    icon = Icons.Default.Home
-                ),
-                MenuItem(
-                    direction = "Home",
-                    title = "Home",
-                    contentDescription = "Go to home",
-                    icon = Icons.Default.Home
+                    direction = "About",
+                    title = "About",
+                    contentDescription = "Go to About",
+                    icon = Icons.Default.Info
                 ),
             ), onItemClick = {
                 println("CLick on ${it.title}")
@@ -140,6 +120,36 @@ fun HomeScreen(
                         Spacer(modifier = Modifier.height(10.dp))
                         SearchBox()
                         Spacer(modifier = Modifier.height(26.dp))
+                        Column() {
+                            Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
+                                Button(onClick = { /*TODO*/ }, modifier = Modifier.padding(start = 5.dp, end = 5.dp).clip(
+                                    RoundedCornerShape(100.dp)
+                                )) {
+                                    Text(text = "Seeds")
+                                }
+                                Button(onClick = { /*TODO*/ }, modifier = Modifier.padding(start = 5.dp, end = 5.dp).clip(
+                                    RoundedCornerShape(100.dp)
+                                )) {
+                                    Text(text = "Vegetables")
+                                }
+                                Button(onClick = { /*TODO*/ }, modifier = Modifier.padding(start = 5.dp, end = 5.dp).clip(
+                                    RoundedCornerShape(100.dp)
+                                )) {
+                                    Text(text = "Grains")
+                                }
+                                Button(onClick = { /*TODO*/ }, modifier = Modifier.padding(start = 5.dp, end = 5.dp).clip(
+                                    RoundedCornerShape(100.dp)
+                                )) {
+                                    Text(text = "Fruits")
+                                }
+                                Button(onClick = { /*TODO*/ }, modifier = Modifier.padding(start = 5.dp, end = 5.dp).clip(
+                                    RoundedCornerShape(100.dp)
+                                )) {
+
+                                    Text(text = "Roots")
+                                }
+                            }
+                        }
                         if (state.value.coffeeSuccess?.isNotEmpty() == true) {
                             AllCoffeeContent(
                                 product = state.value.coffeeSuccess!!,

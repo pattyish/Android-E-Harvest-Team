@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_peter_joy_round.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-xhdpi\\ic_launcher_peter_joy_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n1.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-hdpi_ic_launcher_peter_joy_round.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-hdpi\\ic_launcher_peter_joy_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_cover2.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\cover2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_home.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\home.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n5.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_veg_1.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\veg_1.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n8.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n8.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_peter_joy.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-xhdpi\\ic_launcher_peter_joy.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_fruits.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\fruits.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-mdpi_ic_launcher_peter_joy.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-mdpi\\ic_launcher_peter_joy.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-mdpi_ic_launcher_peter_joy_round.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-mdpi\\ic_launcher_peter_joy_round.png"
+    },
+    {
+        "merged": "com.example.e_harvester.app-merged_res-46:/font_akshatfont.ttf.flat",
+        "source": "com.example.e_harvester.app-main-48:/font/akshatfont.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_ic_launcher_peter_joy_foreground.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\drawable\\ic_launcher_peter_joy_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_peter_joy_round.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-xxxhdpi\\ic_launcher_peter_joy_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_apple.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\apple.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n2.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_peter_joy.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-xxxhdpi\\ic_launcher_peter_joy.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-hdpi_ic_launcher_peter_joy.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-hdpi\\ic_launcher_peter_joy.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.e_harvester.app-merged_res-46:/drawable-v24_cardphoto.png.flat",
+        "source": "com.example.e_harvester.app-main-48:/drawable-v24/cardphoto.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_cab_1.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\cab_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n9.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher_peter_joy.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-anydpi-v26\\ic_launcher_peter_joy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher_peter_joy_round.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-xxhdpi\\ic_launcher_peter_joy_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher_peter_joy.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-xxhdpi\\ic_launcher_peter_joy.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_cover.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\cover.jpg"
+    },
+    {
+        "merged": "com.example.e_harvester.app-merged_res-46:/drawable-v24_bg.png.flat",
+        "source": "com.example.e_harvester.app-main-48:/drawable-v24/bg.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.e_harvester.app-merged_res-46:/font_karlafont.ttf.flat",
+        "source": "com.example.e_harvester.app-main-48:/font/karlafont.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n7.jpg.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n7.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher_peter_joy_round.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-debug-47:\\mipmap-anydpi-v26\\ic_launcher_peter_joy_round.xml"
+    },
+    {
+        "merged": "com.example.e_harvester.app-merged_res-46:/drawable-v24_rectangleligth.png.flat",
+        "source": "com.example.e_harvester.app-main-48:/drawable-v24/rectangleligth.png"
+    },
+    {
+        "merged": "com.example.e_harvester.app-merged_res-46:/drawable-v24_sun.png.flat",
+        "source": "com.example.e_harvester.app-main-48:/drawable-v24/sun.png"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-merged_res-46:\\drawable_n3.png.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\7.4\\com.example.e_harvester.app-main-48:\\drawable\\n3.png"
+    }
+]

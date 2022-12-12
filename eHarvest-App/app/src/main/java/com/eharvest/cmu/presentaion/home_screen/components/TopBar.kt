@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.eharvest.cmu.R
 import com.eharvest.cmu.presentaion.common.RegularFont
+import com.eharvest.cmu.ui.theme.LightMagenta
 
 
 @Composable
@@ -34,7 +35,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
         DialogBox(showDialog = showDialog.value,
             dismissDialog = { showDialog.value = false })
     }
-    TopAppBar(elevation = 0.dp,modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp), title = {
+    TopAppBar(elevation = 0.dp,modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp).background(LightMagenta), title = {
         Column {
             Text(
                 text = "Hi, Good Morning",
@@ -45,7 +46,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
                 color = Color.Gray
             )
             Text(
-                text = "Arfin Hosain",
+                text = "Harvester user",
                 textAlign = TextAlign.Start,
                 fontFamily = RegularFont,
                 fontWeight = FontWeight.SemiBold,
@@ -97,7 +98,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
             }
         }
 
-    }, backgroundColor = Color.Black)
+    }, backgroundColor = LightMagenta)
 }
 
 

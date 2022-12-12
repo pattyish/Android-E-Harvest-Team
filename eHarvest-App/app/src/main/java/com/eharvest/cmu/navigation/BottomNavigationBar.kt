@@ -16,6 +16,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.eharvest.cmu.presentaion.common.UserViewModel
+import com.eharvest.cmu.ui.theme.LightMagenta
 
 @Composable
 fun BottomNavigationBar(
@@ -25,7 +26,7 @@ fun BottomNavigationBar(
      userViewModel: UserViewModel = hiltViewModel()
 ) {
     val backStafckEntry = navController.currentBackStackEntryAsState()
-    BottomNavigation(modifier = Modifier.clip(RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp)), backgroundColor = Color.Black) {
+    BottomNavigation(modifier = Modifier.clip(RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp)), backgroundColor = LightMagenta) {
         items.forEach { item ->
             val selected = item.route == backStafckEntry.value?.destination?.route
             BottomNavigationItem(
@@ -50,9 +51,10 @@ fun BottomNavigationBar(
                                 painter = painterResource(id = item.icon),
                                 contentDescription = item.name
                             )
+                            Text(text = item.name, textAlign = TextAlign.Center, fontSize = 10.sp)
                         }
                         if (selected) {
-                            Text(text = item.name, textAlign = TextAlign.Center, fontSize = 10.sp)
+//                            Text(text = item.name, textAlign = TextAlign.Center, fontSize = 10.sp)
                         }
 
                     }
