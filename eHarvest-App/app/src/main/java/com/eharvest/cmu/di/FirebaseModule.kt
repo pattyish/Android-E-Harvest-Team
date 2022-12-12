@@ -29,7 +29,7 @@ object FirebaseModule {
     @Provides
     fun provideFirebaseRealtimeDatabase(
     ): FirebaseDatabase {
-        return FirebaseDatabase.getInstance("https://jetbee-5f678-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        return FirebaseDatabase.getInstance()
     }
 
     @Provides

@@ -7,6 +7,6 @@ object Constant {
     const val SERVER_CLIENT_ID =
         "281928216539-n5khrok4kgn9dojevv3rn25q1vrvmv9d.apps.googleusercontent.com"
 
-    const val DATASTORE_NAME = "JetBee_DataStore"
+    const val DATASTORE_NAME = "EHarvest_DataStore"
     const val PREFERENCES_KEY = "OnBoarding_Completed"
 }

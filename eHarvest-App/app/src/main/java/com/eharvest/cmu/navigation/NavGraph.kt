@@ -14,7 +14,6 @@ import com.eharvest.cmu.presentaion.profile_screen.ProfileScreen
 import com.eharvest.cmu.presentaion.signin_screen.OneTapSignInViewModel
 import com.eharvest.cmu.presentaion.signin_screen.SignInScreen
 import com.eharvest.cmu.presentaion.signup_screen.SignUpScreen
-import com.eharvest.cmu.presentaion.splash_screen.SplashScreen
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
 
@@ -28,7 +27,7 @@ fun NavigationGraph(
 
     AnimatedNavHost(
         navController = navController,
-        startDestination = Screens.SplashScreen.route
+        startDestination = Screens.HomeScreen.route
     ) {
         composable(route = Screens.FireSignInScreen.route) {
             SignInScreen(
@@ -43,9 +42,6 @@ fun NavigationGraph(
             Log.d("Args", it.arguments?.getString(it.toString()).toString())
             MainDetailScreen(navController = navController, detailViewModel = detailViewModel)
 
-        }
-        composable(route = Screens.SplashScreen.route) {
-            SplashScreen(navController = navController)
         }
         composable(
             route = Screens.HomeScreen.route,
