@@ -28,7 +28,7 @@ class HomeScreenViewModel @Inject constructor(
         firebaseRepository.getAllproducts().let { result ->
             when(result){
                 is Resource.Success -> {
-                    _getAllproducts.value = getAllproductsState(coffeeSuccess = result.data)
+                    _getAllproducts.value = getAllproductsState(productSuccess = result.data)
                 }
                 is Resource.Loading -> {
                     _getAllproducts.value = getAllproductsState(isLoading = true)

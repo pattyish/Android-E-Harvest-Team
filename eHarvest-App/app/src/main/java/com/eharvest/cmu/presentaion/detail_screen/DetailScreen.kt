@@ -28,7 +28,7 @@ import coil.compose.rememberAsyncImagePainter
 import com.eharvest.cmu.R
 import com.eharvest.cmu.domain.model.CartProducts
 import com.eharvest.cmu.domain.model.Product
-import com.eharvest.cmu.presentaion.cart_screen.CoffeeCartViewModel
+import com.eharvest.cmu.presentaion.cart_screen.ProductCartViewModel
 import com.eharvest.cmu.presentaion.cart_screen.components.AppTopBar
 import com.eharvest.cmu.presentaion.common.RegularFont
 import com.eharvest.cmu.presentaion.common.UserViewModel
@@ -42,7 +42,7 @@ import kotlinx.coroutines.launch
 fun DetailScreen(
     product: Product, navController: NavController,
     userViewModel: UserViewModel = hiltViewModel(),
-    coffeeCartViewModel: CoffeeCartViewModel = hiltViewModel(),
+    productCartViewModel: ProductCartViewModel = hiltViewModel(),
 ) {
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
@@ -224,7 +224,7 @@ fun DetailScreen(
                         onClick = {
                             addToCart(
                                 userViewModel = userViewModel,
-                                coffeeCartViewModel = coffeeCartViewModel,
+                                productCartViewModel = productCartViewModel,
                                 product = product
                             )
                             scope.launch {
@@ -267,7 +267,7 @@ fun DetailScreen(
 
 fun addToCart(
     userViewModel: UserViewModel,
-    coffeeCartViewModel: CoffeeCartViewModel,
+    productCartViewModel: ProductCartViewModel,
     product: Product
 ) {
     val doesProductAlreadyExits =
@@ -276,7 +276,7 @@ fun addToCart(
         }
     CoroutineScope(Dispatchers.IO).launch {
         if (doesProductAlreadyExits == null) {
-            coffeeCartViewModel.adduProductToCart(
+            productCartViewModel.adduProductToCart(
                 cartProduct = CartProducts(
                     productName = product.name,
                     productPrice = product.price,

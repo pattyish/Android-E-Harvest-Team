@@ -2,9 +2,9 @@ package com.eharvest.cmu.presentaion.cart_screen
 
 import com.eharvest.cmu.domain.model.CartProducts
 
-data class CartCoffeeState(
+data class CartProductState(
     val isLoading: Boolean = true,
-    val cartCoffee: List<CartProducts> = emptyList(),
+    val cartProduct: List<CartProducts> = emptyList(),
     val error: String? = null,
 
 
