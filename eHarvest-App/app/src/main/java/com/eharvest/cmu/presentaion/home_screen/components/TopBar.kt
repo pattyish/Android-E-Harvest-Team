@@ -55,7 +55,11 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
             )
         }
     }, navigationIcon = {
+<<<<<<< Updated upstream
         Image(painter = painterResource(id = R.drawable.product),
+=======
+        Image(painter = painterResource(id = R.drawable.menu),
+>>>>>>> Stashed changes
             contentDescription = "profile image",
             modifier = Modifier
                 .size(58.dp)
