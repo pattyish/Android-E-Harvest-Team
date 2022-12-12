@@ -8,7 +8,7 @@ import androidx.activity.viewModels
 import androidx.compose.animation.ExperimentalAnimationApi
 import com.eharvest.cmu.presentaion.detail_screen.DetailViewModel
 import com.eharvest.cmu.presentaion.signin_screen.OneTapSignInViewModel
-import com.eharvest.cmu.ui.theme.EHarvestTheme
+import com.eharvest.cmu.ui.theme.JetBeeTheme
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import dagger.hilt.android.AndroidEntryPoint
 

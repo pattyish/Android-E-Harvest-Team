@@ -43,10 +43,10 @@ class UserViewModel @Inject constructor(
         }
     }
 
-     fun deleteCoffeeFromCart(cartProducts: CartProducts) {
+     fun deleteProductFromCart(cartProducts: CartProducts) {
         // val userId = currentUser?.uid
         viewModelScope.launch {
-            firebaseRepository.deleteCoffeeFromCart(userId.toString(), cartProduct = cartProducts)
+            firebaseRepository.deleteProductFromCart(userId.toString(), cartProduct = cartProducts)
         }
     }
 

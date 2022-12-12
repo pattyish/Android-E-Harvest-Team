@@ -57,6 +57,101 @@ fun AllCoffeeContent(
 
 }
 
+@Composable
+fun SeedsProducts(
+    product: List<Product>,
+    navController: NavController,
+    detailViewModel: DetailViewModel
+)
+{
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(130.dp),
+        content = {
+            items(product.size) { i ->
+                if (product[i].category.equals("Seeds"))
+                {
+                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                }
+            }
+        })
+}
+
+@Composable
+fun VegetablesProducts(
+    product: List<Product>,
+    navController: NavController,
+    detailViewModel: DetailViewModel
+)
+{
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(130.dp),
+        content = {
+            items(product.size) { i ->
+                if (product[i].category.equals("Vegetables"))
+                {
+                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                }
+            }
+        })
+}
+
+@Composable
+fun FruitsProducts(
+    product: List<Product>,
+    navController: NavController,
+    detailViewModel: DetailViewModel
+)
+{
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(130.dp),
+        content = {
+            items(product.size) { i ->
+                if (product[i].category.equals("Fruits"))
+                {
+                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                }
+            }
+        })
+}
+
+@Composable
+fun GrainsProducts(
+    product: List<Product>,
+    navController: NavController,
+    detailViewModel: DetailViewModel
+)
+{
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(130.dp),
+        content = {
+            items(product.size) { i ->
+                if (product[i].category.equals("Grains"))
+                {
+                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                }
+            }
+        })
+}
+
+@Composable
+fun RootsProducts(
+    product: List<Product>,
+    navController: NavController,
+    detailViewModel: DetailViewModel
+)
+{
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(130.dp),
+        content = {
+            items(product.size) { i ->
+                if (product[i].category.equals("Roots"))
+                {
+                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                }
+            }
+        })
+}
+
 
 @Composable
 fun CoffeeCard(
@@ -163,7 +258,7 @@ fun addToCart(
         }
     CoroutineScope(Dispatchers.IO).launch {
         if (doesProductAlreadyExits == null) {
-            coffeeCartViewModel.addCoffeeToCart(
+            coffeeCartViewModel.adduProductToCart(
                 cartProduct = CartProducts(
                     productName = product.name,
                     productPrice = product.price,
