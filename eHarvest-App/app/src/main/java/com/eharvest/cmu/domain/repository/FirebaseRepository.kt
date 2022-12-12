@@ -16,11 +16,11 @@ interface FirebaseRepository {
 
     fun firebaseSignUp(user: AuthUser): Flow<Resource<String>>
 
-    suspend fun getAllCoffee(): Resource<List<Product>>
+    suspend fun getAllproducts(): Resource<List<Product>>
 
-    fun addCoffeeToCart(cartProduct: CartProducts, userId: String): Flow<Resource<Task<Void>>>
+    fun adduProductToCart(cartProduct: CartProducts, userId: String): Flow<Resource<Task<Void>>>
 
-    fun deleteCoffeeFromCart(userId: String, cartProduct: CartProducts): Resource<Task<Void>>
+    fun deleteProductFromCart(userId: String, cartProduct: CartProducts): Resource<Task<Void>>
 
     suspend fun getUserData(userId: String): AuthUser?
 

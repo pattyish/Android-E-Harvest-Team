@@ -22,11 +22,11 @@ class CoffeeCartViewModel @Inject constructor(
     private val currentUser = firebaseRepository.currentUser()
 
 
-    suspend fun addCoffeeToCart(cartProduct: CartProducts) {
+    suspend fun adduProductToCart(cartProduct: CartProducts) {
         if (currentUser != null) {
             val uid = currentUser.uid
             viewModelScope.launch {
-                firebaseRepository.addCoffeeToCart(cartProduct, uid).collect { result ->
+                firebaseRepository.adduProductToCart(cartProduct, uid).collect { result ->
                     when (result) {
                         is Resource.Success -> {
                             _cartState.value =

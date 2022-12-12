@@ -33,7 +33,7 @@ fun CartBodyItem(
 
     val dismissState = rememberDismissState(confirmStateChange = {
         if (it == DismissValue.DismissedToStart) {
-            userViewModel.deleteCoffeeFromCart(cartProducts = cartProduct)
+            userViewModel.deleteProductFromCart(cartProducts = cartProduct)
             userViewModel.updateUserData()
         }
         true

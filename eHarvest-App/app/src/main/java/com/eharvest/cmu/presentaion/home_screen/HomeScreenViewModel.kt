@@ -15,26 +15,26 @@ class HomeScreenViewModel @Inject constructor(
     private val firebaseRepository: FirebaseRepository
 ) : ViewModel() {
 
-    private val _getAllCoffee: MutableStateFlow<GetAllCoffeeState> = MutableStateFlow(
-        GetAllCoffeeState()
+    private val _getAllproducts: MutableStateFlow<getAllproductsState> = MutableStateFlow(
+        getAllproductsState()
     )
-    val getAllCoffee: StateFlow<GetAllCoffeeState> = _getAllCoffee
+    val getAllproducts: StateFlow<getAllproductsState> = _getAllproducts
 
     init {
-        getAllCoffee()
+        getAllproducts()
     }
 
-    private fun getAllCoffee() = viewModelScope.launch {
-        firebaseRepository.getAllCoffee().let { result ->
+    private fun getAllproducts() = viewModelScope.launch {
+        firebaseRepository.getAllproducts().let { result ->
             when(result){
                 is Resource.Success -> {
-                    _getAllCoffee.value = GetAllCoffeeState(coffeeSuccess = result.data)
+                    _getAllproducts.value = getAllproductsState(coffeeSuccess = result.data)
                 }
                 is Resource.Loading -> {
-                    _getAllCoffee.value = GetAllCoffeeState(isLoading = true)
+                    _getAllproducts.value = getAllproductsState(isLoading = true)
                 }
                 is Resource.Error -> {
-                    _getAllCoffee.value = GetAllCoffeeState(error = result.message)
+                    _getAllproducts.value = getAllproductsState(error = result.message)
                 }
             }
         }

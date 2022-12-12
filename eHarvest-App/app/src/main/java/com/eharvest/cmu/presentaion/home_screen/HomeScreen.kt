@@ -39,7 +39,7 @@ fun HomeScreen(
     navController: NavHostController,
     detailViewModel: DetailViewModel,
 ) {
-    val state = viewModel.getAllCoffee.collectAsState()
+    val state = viewModel.getAllproducts.collectAsState()
 
 
     val state2 = userViewModel.userState.value

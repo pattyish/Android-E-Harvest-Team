@@ -163,7 +163,7 @@ fun addToCart(
         }
     CoroutineScope(Dispatchers.IO).launch {
         if (doesProductAlreadyExits == null) {
-            coffeeCartViewModel.addCoffeeToCart(
+            coffeeCartViewModel.adduProductToCart(
                 cartProduct = CartProducts(
                     productName = product.name,
                     productPrice = product.price,

@@ -59,7 +59,7 @@ class FirebaseRepositoryImpl @Inject constructor(
         }
     }
 
-    override suspend fun getAllCoffee(): Resource<List<Product>> {
+    override suspend fun getAllproducts(): Resource<List<Product>> {
         val result: List<Product>
         return try {
             result = fireStore.collection("products").get().await().map {
@@ -71,7 +71,7 @@ class FirebaseRepositoryImpl @Inject constructor(
         }
     }
 
-    override fun addCoffeeToCart(
+    override fun adduProductToCart(
         cartProduct: CartProducts,
         userId: String
     ): Flow<Resource<Task<Void>>> {
@@ -85,7 +85,7 @@ class FirebaseRepositoryImpl @Inject constructor(
         }
     }
 
-    override fun deleteCoffeeFromCart(
+    override fun deleteProductFromCart(
         userId: String,
         cartProduct: CartProducts
     ): Resource<Task<Void>> {
