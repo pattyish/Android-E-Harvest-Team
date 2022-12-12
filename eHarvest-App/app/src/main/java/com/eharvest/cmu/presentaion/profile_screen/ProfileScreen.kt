@@ -64,11 +64,11 @@ fun ProfileScreen(
                     contentDescription = "Profile Image", contentScale = ContentScale.Crop
                 )
                 Text(
-                    text = "Arfin Hosain",
+                    text = "Patrick Ishimwe",
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
-                    style = TextStyle(color = Color.White)
+                    style = TextStyle(color = Color.Black)
                 )
             }
             Spacer(modifier = Modifier.height(20.dp))
@@ -159,7 +159,7 @@ fun ListOfItem(
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Medium,
                     fontSize = 20.sp,
-                    style = TextStyle(color = Color.White)
+                    style = TextStyle(color = Color.Black)
                 )
                 Row(
                     modifier = Modifier

@@ -183,7 +183,7 @@ fun SignUpScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(70.dp)
-                        .padding(top = 20.dp, start = 30.dp, end = 30.dp),
+                        .padding(top = 20.dp, start = 30.dp, end = 30.dp, bottom = 0.dp),
                     colors = ButtonDefaults.buttonColors(
                         backgroundColor = AksGreen,
                         contentColor = Color.White

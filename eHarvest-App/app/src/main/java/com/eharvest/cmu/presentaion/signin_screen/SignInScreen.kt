@@ -201,35 +201,40 @@ fun SignInScreen(
                     text = "Don't have an account? sign up",
                     fontWeight = FontWeight.Bold, color = Color.Black, fontFamily = RegularFont
                 )
-                Button(
-                    onClick = {
-                        scope.launch(Dispatchers.Main) {
-                            signInViewModel.loginUser(
-                                AuthUser(
-                                    email, password
-                                )
-                            )
-                        }
-
-                    },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(70.dp)
-                        .padding(top = 20.dp, start = 30.dp, end = 30.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        backgroundColor= AksGreen,
-                        contentColor = Color.White
-                    ),
-                    shape = RoundedCornerShape(15.dp)
+                Column(
+                    verticalArrangement = Arrangement.Bottom
                 ) {
-                    Text(
-                        text = "Sign In",
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold,
+                    Button(
+                        onClick = {
+                            scope.launch(Dispatchers.Main) {
+                                signInViewModel.loginUser(
+                                    AuthUser(
+                                        email, password
+                                    )
+                                )
+                            }
+
+                        },
                         modifier = Modifier
-                            .padding(7.dp)
-                    )
+                            .fillMaxWidth()
+                            .height(70.dp)
+                            .padding(top = 20.dp, start = 30.dp, end = 30.dp, bottom = 0.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            backgroundColor= AksGreen,
+                            contentColor = Color.White
+                        ),
+                        shape = RoundedCornerShape(15.dp)
+                    ) {
+                        Text(
+                            text = "Sign In",
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier
+                                .padding(7.dp)
+                        )
+                    }
                 }
+
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Center
