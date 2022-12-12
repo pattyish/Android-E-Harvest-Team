@@ -8,7 +8,7 @@ import androidx.activity.viewModels
 import androidx.compose.animation.ExperimentalAnimationApi
 import com.eharvest.cmu.presentaion.detail_screen.DetailViewModel
 import com.eharvest.cmu.presentaion.signin_screen.OneTapSignInViewModel
-import com.eharvest.cmu.ui.theme.HarvesterTheme
+import com.eharvest.cmu.ui.theme.EHarvestTheme
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HarvesterTheme {
+            JetBeeTheme {
                 val navController = rememberAnimatedNavController()
 
                 NavigationGraph(
