@@ -31,7 +31,7 @@ fun SearchBox() {
             shape = RoundedCornerShape(30.dp),
             placeholder = {
                 Text(
-                    text = "Search Coffee...",
+                    text = "Search Product...",
                     color = Color.LightGray,
                     fontSize = 13.sp
                 )

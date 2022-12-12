@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class CoffeeCartViewModel @Inject constructor(
+class ProductCartViewModel @Inject constructor(
     private val firebaseRepository: FirebaseRepository
 ) : ViewModel() {
 
@@ -30,7 +30,7 @@ class CoffeeCartViewModel @Inject constructor(
                     when (result) {
                         is Resource.Success -> {
                             _cartState.value =
-                                CartState(coffeeAddedToCart = "Coffee Added Successfully")
+                                CartState(productAddedToCart = "Product Added Successfully")
                         }
                         is Resource.Error -> {
                             _cartState.value = CartState(error = "Sorry!! There was a problem")

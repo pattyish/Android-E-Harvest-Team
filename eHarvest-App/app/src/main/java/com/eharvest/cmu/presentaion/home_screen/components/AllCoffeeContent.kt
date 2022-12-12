@@ -29,7 +29,7 @@ import coil.compose.rememberAsyncImagePainter
 import com.eharvest.cmu.domain.model.CartProducts
 import com.eharvest.cmu.domain.model.Product
 import com.eharvest.cmu.navigation.Screens
-import com.eharvest.cmu.presentaion.cart_screen.CoffeeCartViewModel
+import com.eharvest.cmu.presentaion.cart_screen.ProductCartViewModel
 import com.eharvest.cmu.presentaion.common.RegularFont
 import com.eharvest.cmu.presentaion.common.UserViewModel
 import com.eharvest.cmu.presentaion.detail_screen.DetailViewModel
@@ -41,7 +41,7 @@ import com.eharvest.cmu.R
 
 
 @Composable
-fun AllCoffeeContent(
+fun AllProductContent(
     product: List<Product>,
     navController: NavController,
     detailViewModel: DetailViewModel
@@ -51,7 +51,7 @@ fun AllCoffeeContent(
         columns = GridCells.Adaptive(130.dp),
         content = {
             items(product.size) { i ->
-                CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                ProductCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
             }
         })
 
@@ -70,7 +70,7 @@ fun SeedsProducts(
             items(product.size) { i ->
                 if (product[i].category.equals("Seeds"))
                 {
-                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                    ProductCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
                 }
             }
         })
@@ -89,7 +89,7 @@ fun VegetablesProducts(
             items(product.size) { i ->
                 if (product[i].category.equals("Vegetables"))
                 {
-                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                    ProductCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
                 }
             }
         })
@@ -108,7 +108,7 @@ fun FruitsProducts(
             items(product.size) { i ->
                 if (product[i].category.equals("Fruits"))
                 {
-                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                    ProductCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
                 }
             }
         })
@@ -127,7 +127,7 @@ fun GrainsProducts(
             items(product.size) { i ->
                 if (product[i].category.equals("Grains"))
                 {
-                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                    ProductCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
                 }
             }
         })
@@ -146,7 +146,7 @@ fun RootsProducts(
             items(product.size) { i ->
                 if (product[i].category.equals("Roots"))
                 {
-                    CoffeeCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
+                    ProductCard(product = product[i], navController = navController, detailViewModel = detailViewModel)
                 }
             }
         })
@@ -154,10 +154,10 @@ fun RootsProducts(
 
 
 @Composable
-fun CoffeeCard(
+fun ProductCard(
     product: Product,
     userViewModel: UserViewModel = hiltViewModel(),
-    coffeeCartViewModel: CoffeeCartViewModel = hiltViewModel(),
+    productCartViewModel: ProductCartViewModel = hiltViewModel(),
     detailViewModel: DetailViewModel  ,
     navController: NavController,
 ) {
@@ -187,7 +187,7 @@ fun CoffeeCard(
                     model = product.image,
                     contentScale = ContentScale.Crop
                 ),
-                contentDescription = "Coffee"
+                contentDescription = "Product"
             )
             Text(
                 modifier = Modifier.padding(top = 28.dp),
@@ -226,7 +226,7 @@ fun CoffeeCard(
                         .clickable {
                             addToCart(
                                 userViewModel = userViewModel,
-                                coffeeCartViewModel = coffeeCartViewModel,
+                                productCartViewModel = productCartViewModel,
                                 product = product
                             )
 
@@ -249,7 +249,7 @@ fun CoffeeCard(
 
 fun addToCart(
     userViewModel: UserViewModel,
-    coffeeCartViewModel: CoffeeCartViewModel,
+    productCartViewModel: ProductCartViewModel,
     product: Product
 ) {
     val doesProductAlreadyExits =
@@ -258,7 +258,7 @@ fun addToCart(
         }
     CoroutineScope(Dispatchers.IO).launch {
         if (doesProductAlreadyExits == null) {
-            coffeeCartViewModel.adduProductToCart(
+            productCartViewModel.adduProductToCart(
                 cartProduct = CartProducts(
                     productName = product.name,
                     productPrice = product.price,
@@ -276,6 +276,6 @@ fun addToCart(
 @Preview(showBackground = true, uiMode = UI_MODE_NIGHT_YES)
 @Composable
 fun Previewcard() {
-    CoffeeCard(product = Product())
+    ProductCard(product = Product())
 
 }*/

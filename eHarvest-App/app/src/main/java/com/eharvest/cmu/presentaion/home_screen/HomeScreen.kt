@@ -288,11 +288,11 @@ fun HomeScreen(
                             }
 
                         }
-                        if (state.value.coffeeSuccess?.isNotEmpty() == true) {
+                        if (state.value.productSuccess?.isNotEmpty() == true) {
                             if(nameCategory.equals("All"))
                             {
-                                AllCoffeeContent(
-                                    product = state.value.coffeeSuccess!!,
+                                AllProductContent(
+                                    product = state.value.productSuccess!!,
                                     navController = navController,
                                     detailViewModel = detailViewModel
                                 )
@@ -300,7 +300,7 @@ fun HomeScreen(
                             if(nameCategory.equals("Seeds"))
                             {
                                 SeedsProducts(
-                                    product = state.value.coffeeSuccess!!,
+                                    product = state.value.productSuccess!!,
                                     navController = navController,
                                     detailViewModel = detailViewModel)
                                 nameCategory = seeds
@@ -308,7 +308,7 @@ fun HomeScreen(
                             if(nameCategory.equals("Fruits"))
                             {
                                 FruitsProducts(
-                                    product = state.value.coffeeSuccess!!,
+                                    product = state.value.productSuccess!!,
                                     navController = navController,
                                     detailViewModel = detailViewModel)
                                 nameCategory = seeds
@@ -316,7 +316,7 @@ fun HomeScreen(
                             if(nameCategory.equals("Vegetables"))
                             {
                                 VegetablesProducts(
-                                    product = state.value.coffeeSuccess!!,
+                                    product = state.value.productSuccess!!,
                                     navController = navController,
                                     detailViewModel = detailViewModel)
                                 nameCategory = seeds
@@ -324,7 +324,7 @@ fun HomeScreen(
                             if(nameCategory.equals("Grains"))
                             {
                                 GrainsProducts(
-                                    product = state.value.coffeeSuccess!!,
+                                    product = state.value.productSuccess!!,
                                     navController = navController,
                                     detailViewModel = detailViewModel)
                                 nameCategory = seeds
@@ -332,7 +332,7 @@ fun HomeScreen(
                             if(nameCategory.equals("Roots"))
                             {
                                 RootsProducts(
-                                    product = state.value.coffeeSuccess!!,
+                                    product = state.value.productSuccess!!,
                                     navController = navController,
                                     detailViewModel = detailViewModel)
                                 nameCategory = seeds
