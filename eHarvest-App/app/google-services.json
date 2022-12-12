@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "610356669434",
+    "project_id": "eharvest-f04cb",
+    "storage_bucket": "eharvest-f04cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610356669434:android:f66c254819fcec8e2a9243",
+        "android_client_info": {
+          "package_name": "com.eharvest.cmu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610356669434-icbikqm0tu178kv272vl1b9ipatl0lli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjezsjLKMJZifZ8TDC19lzeltYMNfGmvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610356669434-icbikqm0tu178kv272vl1b9ipatl0lli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610356669434:android:3a0d4ac12682cff32a9243",
+        "android_client_info": {
+          "package_name": "com.example.e_harvester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610356669434-icbikqm0tu178kv272vl1b9ipatl0lli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjezsjLKMJZifZ8TDC19lzeltYMNfGmvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610356669434-icbikqm0tu178kv272vl1b9ipatl0lli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
