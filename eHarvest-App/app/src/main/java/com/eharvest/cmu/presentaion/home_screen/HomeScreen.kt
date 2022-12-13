@@ -143,7 +143,10 @@ fun HomeScreen(
             })
 
         }, drawerGesturesEnabled = scaffoldState.drawerState.isOpen, drawerContent = {
-            DrawerHeader()
+//            DrawerHeader()
+//            drawer header with user info
+            DrawerHeader(
+            )
             DrawerBody(items = listOf(
                 MenuItem(
                     direction = "Home",
