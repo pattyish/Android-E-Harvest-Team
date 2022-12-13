@@ -30,6 +30,7 @@ import com.eharvest.cmu.presentaion.menu_screen.DrawerBody
 import com.eharvest.cmu.presentaion.menu_screen.DrawerHeader
 import com.eharvest.cmu.presentaion.menu_screen.MenuItem
 import com.eharvest.cmu.ui.theme.AksGreen
+import com.eharvest.cmu.ui.theme.LightMagenta
 import kotlinx.coroutines.launch
 
 
@@ -135,7 +136,7 @@ fun HomeScreen(
     val scope = rememberCoroutineScope()
 
 
-    Scaffold(scaffoldState = scaffoldState, backgroundColor = AksGreen,
+    Scaffold(scaffoldState = scaffoldState, backgroundColor = LightMagenta,
         topBar = {
             TopBar(onNavigationIconClick = {
                 scope.launch {
@@ -256,35 +257,6 @@ fun HomeScreen(
                                 }
 
 
-//                                Button(onClick = { nameCategory="Vegetables" }, modifier = Modifier
-//                                    .padding(start = 5.dp, end = 5.dp)
-//                                    .clip(
-//                                        RoundedCornerShape(100.dp)
-//                                    )) {
-//                                    Text(text = "Vegetables")
-//                                }
-//                                Button(onClick = { nameCategory="Grains" }, modifier = Modifier
-//                                    .padding(start = 5.dp, end = 5.dp)
-//                                    .clip(
-//                                        RoundedCornerShape(100.dp)
-//                                    )) {
-//                                    Text(text = "Grains")
-//                                }
-//                                Button(onClick = { nameCategory="Fruits" }, modifier = Modifier
-//                                    .padding(start = 5.dp, end = 5.dp)
-//                                    .clip(
-//                                        RoundedCornerShape(100.dp)
-//                                    )) {
-//                                    Text(text = "Fruits")
-//                                }
-//                                Button(onClick = { nameCategory="Roots" }, modifier = Modifier
-//                                    .padding(start = 5.dp, end = 5.dp)
-//                                    .clip(
-//                                        RoundedCornerShape(100.dp)
-//                                    )) {
-//
-//                                    Text(text = "Roots")
-//                                }
                             }
                             Row() {
                                 Text(text = nameCategory, fontSize = 12.sp, modifier = Modifier.padding(bottom = 5.dp, end = 3.dp))
