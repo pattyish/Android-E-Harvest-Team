@@ -47,7 +47,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
             )
         }
     }, navigationIcon = {
-        Image(painter = painterResource(id = R.drawable.product),
+        Image(painter = painterResource(id = R.drawable.menu),
             contentDescription = "profile image",
             modifier = Modifier
                 .size(58.dp)
