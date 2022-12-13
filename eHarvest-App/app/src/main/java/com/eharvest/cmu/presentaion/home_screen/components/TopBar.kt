@@ -37,12 +37,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
             dismissDialog = { showDialog.value = false })
     }
     TopAppBar(elevation = 0.dp,modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp), title = {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter) {
-            Image(
-                painter = painterResource(id = R.drawable.bg),
-                contentDescription = null,
-                contentScale = ContentScale.Crop
-            )
+
             Column {
                 Text(
                     text = "Welcome to EHarvester",
@@ -53,7 +48,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
                     style = TextStyle(color = Color.White)
                 )
             }
-        }
+
     }, navigationIcon = {
         Image(painter = painterResource(id = R.drawable.ic_baseline_menu_24),
             contentDescription = "Menu",

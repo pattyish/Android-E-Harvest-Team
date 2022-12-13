@@ -29,6 +29,7 @@ import com.eharvest.cmu.presentaion.home_screen.components.TopBar
 import com.eharvest.cmu.presentaion.menu_screen.DrawerBody
 import com.eharvest.cmu.presentaion.menu_screen.DrawerHeader
 import com.eharvest.cmu.presentaion.menu_screen.MenuItem
+import com.eharvest.cmu.ui.theme.AksGreen
 import kotlinx.coroutines.launch
 
 
@@ -134,7 +135,7 @@ fun HomeScreen(
     val scope = rememberCoroutineScope()
 
 
-    Scaffold(scaffoldState = scaffoldState, backgroundColor = Color.Black,
+    Scaffold(scaffoldState = scaffoldState, backgroundColor = AksGreen,
         topBar = {
             TopBar(onNavigationIconClick = {
                 scope.launch {
