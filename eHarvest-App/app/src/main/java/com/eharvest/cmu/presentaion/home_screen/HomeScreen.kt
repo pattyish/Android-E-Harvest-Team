@@ -175,9 +175,9 @@ fun HomeScreen(
                         badgeCount = state2.cartProducts.size
                     ),
                     BottomNavItem(
-                        name = "Favourite",
-                        icon = com.eharvest.cmu.R.drawable.heart,
-                        route = Screens.Favourite.route
+                        name = "Search",
+                        icon = com.eharvest.cmu.R.drawable.baseline_search_24,
+                        route = Screens.SearchScreen.route
                     ),
                     BottomNavItem(
                         name = "Profile",

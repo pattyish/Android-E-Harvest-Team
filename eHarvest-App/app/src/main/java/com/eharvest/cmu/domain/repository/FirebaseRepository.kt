@@ -17,6 +17,7 @@ interface FirebaseRepository {
     fun firebaseSignUp(user: AuthUser): Flow<Resource<String>>
 
     suspend fun getAllproducts(): Resource<List<Product>>
+    suspend fun getSearchedProducts(): Resource<List<Product>>
 
     fun adduProductToCart(cartProduct: CartProducts, userId: String): Flow<Resource<Task<Void>>>
 

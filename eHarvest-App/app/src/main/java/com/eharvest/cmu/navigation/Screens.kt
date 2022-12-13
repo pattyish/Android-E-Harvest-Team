@@ -6,7 +6,7 @@ sealed class Screens(val route: String) {
     object FireSignUpScreen : Screens(route = "Firebase_SignUp_Screen")
     object HomeScreen : Screens(route = "Home_Screen")
     object CartScreen : Screens(route = "Cart_Screen")
-    object Favourite : Screens(route = "Favourite_Screen")
+    object SearchScreen : Screens(route = "Search_Screen")
     object Profile : Screens(route = "Profile_Screen")
     object Details : Screens(route = "Details_Screen") {
         fun passName(name: String): String {
