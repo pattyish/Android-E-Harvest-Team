@@ -11,6 +11,7 @@ import com.eharvest.cmu.presentaion.detail_screen.DetailViewModel
 import com.eharvest.cmu.presentaion.detail_screen.MainDetailScreen
 import com.eharvest.cmu.presentaion.home_screen.HomeScreen
 import com.eharvest.cmu.presentaion.profile_screen.ProfileScreen
+import com.eharvest.cmu.presentaion.search_screen.SearchScreen
 import com.eharvest.cmu.presentaion.signin_screen.OneTapSignInViewModel
 import com.eharvest.cmu.presentaion.signin_screen.SignInScreen
 import com.eharvest.cmu.presentaion.signup_screen.SignUpScreen
@@ -67,6 +68,8 @@ fun NavigationGraph(
         composable(route = Screens.Profile.route) {
             ProfileScreen(navController = navController)
         }
+        composable(route=Screens.SearchScreen.route) {
+            SearchScreen(navController = navController,detailViewModel = detailViewModel)}
     }
 
 }

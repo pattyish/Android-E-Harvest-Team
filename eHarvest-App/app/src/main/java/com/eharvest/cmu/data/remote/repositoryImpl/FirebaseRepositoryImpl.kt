@@ -71,6 +71,19 @@ class FirebaseRepositoryImpl @Inject constructor(
         }
     }
 
+    override suspend fun getSearchedProducts(): Resource<List<Product>> {
+        val result: List<Product>
+        return try {
+            result = fireStore.collection("products").get().await().map {
+                it.toObject(Product::class.java)
+            }
+            Resource.Success(result)
+        } catch (e: FirebaseFirestoreException) {
+            Resource.Error(e.message.toString())
+        }
+    }
+
+
     override fun adduProductToCart(
         cartProduct: CartProducts,
         userId: String

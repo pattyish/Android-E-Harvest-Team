@@ -15,10 +15,10 @@ sealed class BottomBarScreen(val title: String, val icon: Int, val route: String
         route = "cart"
     )
 
-    object Favourite : BottomBarScreen(
-        title = "Favourite",
-        icon = R.drawable.heart,
-        route = "favourite"
+    object Search : BottomBarScreen(
+        title = "Search",
+        icon = R.drawable.search,
+        route = "search"
     )
 
     object Profile : BottomBarScreen(

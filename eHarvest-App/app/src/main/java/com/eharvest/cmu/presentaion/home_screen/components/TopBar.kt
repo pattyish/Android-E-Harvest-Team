@@ -57,6 +57,7 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
     }, navigationIcon = {
         Image(painter = painterResource(id = R.drawable.ic_baseline_menu_24),
             contentDescription = "Menu",
+
             modifier = Modifier
                 .size(58.dp)
                 .clip(
