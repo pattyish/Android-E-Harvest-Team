@@ -50,7 +50,7 @@ fun CartBillItem(modifier: Modifier = Modifier, userViewModel: UserViewModel = h
                         style = TextStyle(color = Color.Black)
                     )
                     Text(
-                        text = "$${calculateTotalPrice(userViewModel)}",
+                        text = "RWF${calculateTotalPrice(userViewModel)}",
                         fontFamily = RegularFont,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Medium,

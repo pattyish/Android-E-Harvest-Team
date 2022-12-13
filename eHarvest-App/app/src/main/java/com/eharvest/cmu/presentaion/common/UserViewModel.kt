@@ -4,8 +4,8 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.eharvest.cmu.domain.model.AuthUser
-import com.eharvest.cmu.domain.model.CartProducts
+import com.eharvest.cmu.model.AuthUser
+import com.eharvest.cmu.model.CartProducts
 import com.eharvest.cmu.domain.repository.FirebaseRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

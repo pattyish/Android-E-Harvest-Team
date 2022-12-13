@@ -2,7 +2,7 @@ package com.eharvest.cmu.presentaion.signin_screen
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.eharvest.cmu.domain.model.AuthUser
+import com.eharvest.cmu.model.AuthUser
 import com.eharvest.cmu.domain.repository.FirebaseRepository
 import com.eharvest.cmu.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel

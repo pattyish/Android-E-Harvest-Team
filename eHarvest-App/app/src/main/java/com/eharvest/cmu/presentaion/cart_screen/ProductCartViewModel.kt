@@ -4,7 +4,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.eharvest.cmu.domain.model.CartProducts
+import com.eharvest.cmu.model.CartProducts
 import com.eharvest.cmu.domain.repository.FirebaseRepository
 import com.eharvest.cmu.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel

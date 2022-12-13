@@ -1,6 +1,6 @@
 package com.eharvest.cmu.data.remote.repositoryImpl
 
-import com.eharvest.cmu.domain.model.AuthUser
+import com.eharvest.cmu.model.AuthUser
 import com.eharvest.cmu.domain.repository.GoogleSignInRepository
 import com.eharvest.cmu.util.Constant.USER_COLLECTION
 import com.eharvest.cmu.util.Resource

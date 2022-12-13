@@ -1,6 +1,6 @@
 package com.eharvest.cmu.presentaion.cart_screen
 
-import com.eharvest.cmu.domain.model.CartProducts
+import com.eharvest.cmu.model.CartProducts
 
 data class CartProductState(
     val isLoading: Boolean = true,

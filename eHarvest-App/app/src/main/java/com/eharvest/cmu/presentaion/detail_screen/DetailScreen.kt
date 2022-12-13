@@ -26,8 +26,8 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberAsyncImagePainter
 import com.eharvest.cmu.R
-import com.eharvest.cmu.domain.model.CartProducts
-import com.eharvest.cmu.domain.model.Product
+import com.eharvest.cmu.model.CartProducts
+import com.eharvest.cmu.model.Product
 import com.eharvest.cmu.presentaion.cart_screen.ProductCartViewModel
 import com.eharvest.cmu.presentaion.cart_screen.components.AppTopBar
 import com.eharvest.cmu.presentaion.common.RegularFont
@@ -209,7 +209,7 @@ fun DetailScreen(
                             fontWeight = FontWeight.Medium, style = TextStyle(color = Color.Gray)
                         )
                         Text(
-                            text = "$ ${product.price}",
+                            text = "RWF ${product.price}",
                             fontSize = 25.sp,
                             fontFamily = RegularFont,
                             fontWeight = FontWeight.Bold, style = TextStyle(color = Color.White)

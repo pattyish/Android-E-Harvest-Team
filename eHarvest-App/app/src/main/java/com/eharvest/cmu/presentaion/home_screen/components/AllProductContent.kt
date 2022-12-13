@@ -26,8 +26,8 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
-import com.eharvest.cmu.domain.model.CartProducts
-import com.eharvest.cmu.domain.model.Product
+import com.eharvest.cmu.model.CartProducts
+import com.eharvest.cmu.model.Product
 import com.eharvest.cmu.navigation.Screens
 import com.eharvest.cmu.presentaion.cart_screen.ProductCartViewModel
 import com.eharvest.cmu.presentaion.common.RegularFont
@@ -158,7 +158,7 @@ fun ProductCard(
     product: Product,
     userViewModel: UserViewModel = hiltViewModel(),
     productCartViewModel: ProductCartViewModel = hiltViewModel(),
-    detailViewModel: DetailViewModel  ,
+    detailViewModel: DetailViewModel,
     navController: NavController,
 ) {
 
@@ -215,7 +215,7 @@ fun ProductCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "$${product.price}",
+                    text = "RWF ${product.price}",
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Medium,
                     fontSize = 18.sp, color = Color.White

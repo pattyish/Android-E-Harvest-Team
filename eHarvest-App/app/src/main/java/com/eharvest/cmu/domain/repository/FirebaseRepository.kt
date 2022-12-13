@@ -1,8 +1,8 @@
 package com.eharvest.cmu.domain.repository
 
-import com.eharvest.cmu.domain.model.AuthUser
-import com.eharvest.cmu.domain.model.CartProducts
-import com.eharvest.cmu.domain.model.Product
+import com.eharvest.cmu.model.AuthUser
+import com.eharvest.cmu.model.CartProducts
+import com.eharvest.cmu.model.Product
 import com.eharvest.cmu.presentaion.order_screen.Order
 import com.eharvest.cmu.util.Resource
 import com.google.android.gms.tasks.Task
@@ -17,6 +17,7 @@ interface FirebaseRepository {
     fun firebaseSignUp(user: AuthUser): Flow<Resource<String>>
 
     suspend fun getAllproducts(): Resource<List<Product>>
+
     suspend fun getSearchedProducts(): Resource<List<Product>>
 
     fun adduProductToCart(cartProduct: CartProducts, userId: String): Flow<Resource<Task<Void>>>

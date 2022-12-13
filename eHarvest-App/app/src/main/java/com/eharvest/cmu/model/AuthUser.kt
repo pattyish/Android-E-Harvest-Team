@@ -1,4 +1,4 @@
-package com.eharvest.cmu.domain.model
+package com.eharvest.cmu.model
 
 
 data class AuthUser(

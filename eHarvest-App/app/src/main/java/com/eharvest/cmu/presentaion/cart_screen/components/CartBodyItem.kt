@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.rememberAsyncImagePainter
 import com.eharvest.cmu.R
-import com.eharvest.cmu.domain.model.CartProducts
+import com.eharvest.cmu.model.CartProducts
 import com.eharvest.cmu.presentaion.common.RegularFont
 import com.eharvest.cmu.presentaion.common.UserViewModel
 import com.eharvest.cmu.ui.theme.LightBlack
@@ -88,7 +88,7 @@ fun CartBodyItem(
                             fontSize = 16.sp
                         )
                         Text(
-                            text = "$${cartProduct.productPrice}",
+                            text = "RWF${cartProduct.productPrice}",
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
                             fontFamily = RegularFont,

@@ -30,7 +30,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.eharvest.cmu.R
-import com.eharvest.cmu.domain.model.AuthUser
+import com.eharvest.cmu.model.AuthUser
 import com.eharvest.cmu.navigation.Screens
 import com.eharvest.cmu.presentaion.common.AuthenticationField
 import com.eharvest.cmu.presentaion.common.RegularFont
