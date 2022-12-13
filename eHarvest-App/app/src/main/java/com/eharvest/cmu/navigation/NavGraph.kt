@@ -6,10 +6,12 @@ import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import com.eharvest.cmu.navigation.Screens
+import com.eharvest.cmu.presentaion.add_product.AddProductScreen
 import com.eharvest.cmu.presentaion.cart_screen.components.CartScreen
 import com.eharvest.cmu.presentaion.detail_screen.DetailViewModel
 import com.eharvest.cmu.presentaion.detail_screen.MainDetailScreen
 import com.eharvest.cmu.presentaion.home_screen.HomeScreen
+import com.eharvest.cmu.presentaion.products.ProductsLitScreen
 import com.eharvest.cmu.presentaion.profile_screen.ProfileScreen
 import com.eharvest.cmu.presentaion.search_screen.SearchScreen
 import com.eharvest.cmu.presentaion.signin_screen.OneTapSignInViewModel
@@ -67,6 +69,12 @@ fun NavigationGraph(
         }
         composable(route = Screens.Profile.route) {
             ProfileScreen(navController = navController)
+        }
+        composable(route = Screens.Products.route) {
+            ProductsLitScreen(navController = navController)
+        }
+        composable(route = Screens.AddProduct.route) {
+            AddProductScreen(navController = navController)
         }
         composable(route=Screens.SearchScreen.route) {
             SearchScreen(navController = navController,detailViewModel = detailViewModel)}

@@ -189,8 +189,6 @@ class FirebaseRepositoryImpl @Inject constructor(
         return firebaseAuth.signOut()
     }
 
-
-
     private val userCartCollection = currentUser()?.uid?.let {
         fireStore.collection(USER_COLLECTION)
     }

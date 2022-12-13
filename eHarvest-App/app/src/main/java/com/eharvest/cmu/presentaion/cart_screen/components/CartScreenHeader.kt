@@ -11,14 +11,12 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import com.eharvest.cmu.presentaion.common.RegularFont
 
 
 @Composable
 fun AppTopBar(
     title: String,
-    navController: NavController,
     navIcon: Painter? = null,
     actionIcon: Painter? = null,
     backGroundColor: Color,

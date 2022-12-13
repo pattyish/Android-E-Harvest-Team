@@ -50,7 +50,6 @@ fun DetailScreen(
     Scaffold(topBar = {
         AppTopBar(
             title = "Detail Item",
-            navController = navController,
             backGroundColor = LightBlack,
             titleColor = Color.White
         )
