@@ -23,6 +23,6 @@ sealed class Screens(val route: String) {
     object About : Screens(route = "About")
     object Help : Screens(route = "Help")
     object LogOut : Screens(route = "LogOut")
-
-
+    object Products : Screens(route = "Products")
+    object AddProduct : Screens(route = "AddProduct")
 }

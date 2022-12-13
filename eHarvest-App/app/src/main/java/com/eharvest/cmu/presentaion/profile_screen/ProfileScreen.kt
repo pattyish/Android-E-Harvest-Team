@@ -1,5 +1,6 @@
 package com.eharvest.cmu.presentaion.profile_screen
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -41,9 +42,9 @@ fun ProfileScreen(
     Scaffold(topBar = {
         AppTopBar(
             title = "Profile ",
-            navController = navController,
+            navIcon = painterResource(id = R.drawable.back_icon),
             backGroundColor = Color.Black,
-            titleColor = Color.White, navIcon = painterResource(id = R.drawable.back_icon)
+            titleColor = Color.White
         )
     }, content = { paddingValues ->
         Column(
@@ -53,7 +54,9 @@ fun ProfileScreen(
                 .verticalScroll(rememberScrollState())
         ) {
             Column(
-                modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 20.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
@@ -68,7 +71,7 @@ fun ProfileScreen(
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
-                    style = TextStyle(color = Color.White)
+                    style = TextStyle(color = Color.Black)
                 )
             }
             Spacer(modifier = Modifier.height(20.dp))
@@ -89,6 +92,11 @@ fun ProfileScreen(
                         name = "Delivery Address",
                         icon = R.drawable.delivery,
                         route = Screens.DeliveryAddress.route
+                    ),
+                    ProfileMenuItem(
+                        name = "Products",
+                        icon = R.drawable.cart,
+                        route = Screens.Products.route
                     ),
                     ProfileMenuItem(
                         name = "Payment Method",
@@ -121,6 +129,16 @@ fun ProfileScreen(
                                 }
                             }
                         }
+                        "Products" -> {
+                            Log.e("ROUTE", "There")
+                            navController.navigate(Screens.Products.route)
+                            {
+                                popUpTo(route = Screens.Products.route) {
+                                    inclusive = true
+                                }
+                            }
+                        }
+
                     }
                     //Toast.makeText(context, it.route, Toast.LENGTH_SHORT).show()
                 }
@@ -159,7 +177,7 @@ fun ListOfItem(
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Medium,
                     fontSize = 20.sp,
-                    style = TextStyle(color = Color.White)
+                    style = TextStyle(color = Color.Black)
                 )
                 Row(
                     modifier = Modifier
@@ -198,6 +216,11 @@ fun ProfileMenu(
             name = "Personal Details",
             icon = R.drawable.cart,
             route = Screens.PersonalDetails.route
+        ),
+        ProfileMenuItem(
+            name = "Products",
+            icon = R.drawable.cart,
+            route = Screens.Products.route
         ),
         ProfileMenuItem(
             name = "Delivery Address",
