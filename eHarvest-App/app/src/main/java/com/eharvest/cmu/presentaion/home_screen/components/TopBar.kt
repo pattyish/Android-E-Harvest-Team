@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -35,28 +36,23 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
         DialogBox(showDialog = showDialog.value,
             dismissDialog = { showDialog.value = false })
     }
-    TopAppBar(elevation = 0.dp,modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp).background(LightMagenta), title = {
-        Column {
-            Text(
-                text = "Hi, Good Morning",
-                textAlign = TextAlign.Start,
-                fontFamily = RegularFont,
-                fontWeight = FontWeight.Medium,
-                fontSize = 12.sp,
-                color = Color.Gray
-            )
-            Text(
-                text = "Harvester user",
-                textAlign = TextAlign.Start,
-                fontFamily = RegularFont,
-                fontWeight = FontWeight.SemiBold,
-                fontSize = 18.sp,
-                style = TextStyle(color = Color.White)
-            )
-        }
+    TopAppBar(elevation = 0.dp,modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp), title = {
+
+            Column {
+                Text(
+                    text = "Welcome to EHarvester",
+                    textAlign = TextAlign.Center,
+                    fontFamily = RegularFont,
+                    fontWeight = FontWeight.SemiBold,
+                    fontSize = 18.sp,
+                    style = TextStyle(color = Color.White)
+                )
+            }
+
     }, navigationIcon = {
-        Image(painter = painterResource(id = R.drawable.coffee),
-            contentDescription = "profile image",
+        Image(painter = painterResource(id = R.drawable.ic_baseline_menu_24),
+            contentDescription = "Menu",
+
             modifier = Modifier
                 .size(58.dp)
                 .clip(
@@ -91,15 +87,19 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
                         .clickable {
                             showDialog.value = true
                         },
-                    painter = painterResource(id = R.drawable.notification),
+                    painter = painterResource(id = R.drawable.ic_baseline_circle_notifications_24),
                     contentDescription = "",
                     tint = Color.Black
                 )
             }
         }
 
-    }, backgroundColor = LightMagenta)
+    },
+//        set background to be a an image
+        backgroundColor = Color.Transparent
+        )
 }
+
 
 
 @Composable
@@ -142,7 +142,9 @@ fun DialogBox(
                 Text(text = "Dismiss")
             }
         }
-    })
+    }
+    )
+    
 }
 
 

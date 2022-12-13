@@ -21,7 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -34,6 +34,7 @@ import com.eharvest.cmu.domain.model.AuthUser
 import com.eharvest.cmu.navigation.Screens
 import com.eharvest.cmu.presentaion.common.AuthenticationField
 import com.eharvest.cmu.presentaion.common.RegularFont
+import com.eharvest.cmu.ui.theme.AksGreen
 import com.eharvest.cmu.util.Constant.SERVER_CLIENT_ID
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -55,7 +56,6 @@ fun SignInScreen(
             contentDescription = null,
             contentScale = ContentScale.Crop
         )
-
         Column(
             modifier = Modifier
                 .padding(top = 10.dp)
@@ -123,7 +123,7 @@ fun SignInScreen(
             ) {
                 Text(
                     modifier = Modifier.padding(bottom = 15.dp),
-                    text = "Welcome Back",
+                    text = stringResource(id = R.string.login),
                     fontWeight = FontWeight.Bold,
                     fontSize = 35.sp,
                     fontFamily = RegularFont,
@@ -177,41 +177,12 @@ fun SignInScreen(
                 )
                 Text(
                     modifier = Modifier
-                        .align(Alignment.End)
+                        .align(Alignment.Start)
                         .padding(end = 20.dp, top = 10.dp),
-                    text = "Forgot Password?",
-                    fontWeight = FontWeight.SemiBold, color = Color.Red, fontFamily = RegularFont,
+                    text = stringResource(id = R.string.forgot_password),
+                    fontWeight = FontWeight.SemiBold, color = Color.Black, fontFamily = RegularFont,
 
                     )
-                Button(
-                    onClick = {
-                        scope.launch(Dispatchers.Main) {
-                            signInViewModel.loginUser(
-                                AuthUser(
-                                    email, password
-                                )
-                            )
-                        }
-
-                    },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(top = 20.dp, start = 30.dp, end = 30.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        backgroundColor = Color.Black,
-                        contentColor = Color.White
-                    ),
-                    shape = RoundedCornerShape(15.dp)
-                ) {
-                    Text(
-                        text = "Register",
-                        color = Color.White,
-                        style = TextStyle(fontSize = 45.sp),
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier
-                            .padding(start = 30.dp, top = 40.dp)
-                    )
-                }
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Center
@@ -231,6 +202,40 @@ fun SignInScreen(
                     text = "Don't have an account? sign up",
                     fontWeight = FontWeight.Bold, color = Color.Black, fontFamily = RegularFont
                 )
+                Column(
+                    verticalArrangement = Arrangement.Bottom
+                ) {
+                    Button(
+                        onClick = {
+                            scope.launch(Dispatchers.Main) {
+                                signInViewModel.loginUser(
+                                    AuthUser(
+                                        email, password
+                                    )
+                                )
+                            }
+
+                        },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(70.dp)
+                            .padding(top = 20.dp, start = 30.dp, end = 30.dp, bottom = 0.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            backgroundColor= AksGreen,
+                            contentColor = Color.White
+                        ),
+                        shape = RoundedCornerShape(15.dp)
+                    ) {
+                        Text(
+                            text = stringResource(id = R.string.sign_in_button),
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier
+                                .padding(7.dp)
+                        )
+                    }
+                }
+
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Center

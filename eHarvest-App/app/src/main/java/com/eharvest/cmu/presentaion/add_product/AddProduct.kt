@@ -103,7 +103,7 @@ fun AddProductScreen(
 
                 Box(modifier = Modifier.padding(30.dp)) {
                     Button(
-                        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue),
+                        colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray),
                         onClick = {},
                         shape = RoundedCornerShape(5.dp),
                         modifier = Modifier

@@ -63,11 +63,11 @@ fun ProfileScreen(
                     modifier = Modifier
                         .clip(CircleShape)
                         .size(80.dp),
-                    painter = painterResource(id = R.drawable.arfin),
+                    painter = painterResource(id = R.drawable.splashimage),
                     contentDescription = "Profile Image", contentScale = ContentScale.Crop
                 )
                 Text(
-                    text = "Arfin Hosain",
+                    text = "Patrick Ishimwe",
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,

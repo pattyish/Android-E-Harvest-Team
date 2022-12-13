@@ -14,3 +14,10 @@ val LightMagenta = Color(0xFF055C08)
 val LightGray100 = Color(0xFF848588)
 val DarkYellow = Color(0xFFf7b32b)
 val LightGray = Color(0xFFf5f5f5)
+val TextGray = Color(0xFF888888)
+val AkshatWhite = Color(0xFFF9FAFB)
+val AksGreen = Color(0xFF19A54A)
+
+
+val Pink = Color(0xFFe91d62)
+val Bg = Color(0xFFf4f4f4)

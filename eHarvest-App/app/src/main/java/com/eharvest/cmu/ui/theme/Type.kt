@@ -9,6 +9,14 @@ import androidx.compose.ui.unit.sp
 import com.eharvest.cmu.R
 
 // Set of Material typography styles to start with
+
+//val aksfonts = FontFamily(
+//    Font(R.font.akshatfont)
+//)
+//
+//val karla = FontFamily(
+//    Font(R.font.karlafont)
+//)
 val Typography = Typography(
     body1 = TextStyle(
         fontFamily = FontFamily(Font(R.font.michroma)),
