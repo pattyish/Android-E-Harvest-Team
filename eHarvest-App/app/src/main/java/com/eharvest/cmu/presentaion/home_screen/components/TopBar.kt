@@ -38,16 +38,8 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
     TopAppBar(elevation = 0.dp,modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp).background(LightMagenta), title = {
         Column {
             Text(
-                text = "Hi, Good Morning",
-                textAlign = TextAlign.Start,
-                fontFamily = RegularFont,
-                fontWeight = FontWeight.Medium,
-                fontSize = 12.sp,
-                color = Color.Gray
-            )
-            Text(
-                text = "Harvester user",
-                textAlign = TextAlign.Start,
+                text = "Harvester",
+                textAlign = TextAlign.Center,
                 fontFamily = RegularFont,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 18.sp,
@@ -55,7 +47,8 @@ fun TopBar(onNavigationIconClick: () -> Unit) {
             )
         }
     }, navigationIcon = {
-        Image(painter = painterResource(id = R.drawable.coffee),
+        Image(painter = painterResource(id = R.drawable.menu),
+
             contentDescription = "profile image",
             modifier = Modifier
                 .size(58.dp)

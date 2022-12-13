@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -122,7 +123,7 @@ fun SignInScreen(
             ) {
                 Text(
                     modifier = Modifier.padding(bottom = 15.dp),
-                    text = "Login",
+                    text = stringResource(id = R.string.login),
                     fontWeight = FontWeight.Bold,
                     fontSize = 35.sp,
                     fontFamily = RegularFont,
@@ -178,7 +179,7 @@ fun SignInScreen(
                     modifier = Modifier
                         .align(Alignment.Start)
                         .padding(end = 20.dp, top = 10.dp),
-                    text = "Forgot Password?",
+                    text = stringResource(id = R.string.forgot_password),
                     fontWeight = FontWeight.SemiBold, color = Color.Black, fontFamily = RegularFont,
 
                     )
@@ -226,7 +227,7 @@ fun SignInScreen(
                         shape = RoundedCornerShape(15.dp)
                     ) {
                         Text(
-                            text = "Sign In",
+                            text = stringResource(id = R.string.sign_in_button),
                             color = Color.White,
                             fontWeight = FontWeight.Bold,
                             modifier = Modifier
